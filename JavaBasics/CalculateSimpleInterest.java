@@ -1,8 +1,13 @@
+import java.time.LocalDateTime;
+import java.util.Scanner;
+
 public class CalculateSimpleInterest {
     public static void main(String[] args) {
-        int principal = 1000;
-        int rate = 5; 
-        int time = 2; // time in years
-        System.out.println("Simple Interest is: " + (principal * rate * time) / 100);
-        }
+        Scanner sc =new Scanner(System.in);
+        double principal=sc.nextDouble();
+        double rate=sc.nextDouble();
+        double time=sc.nextDouble();
+        double simple_interest=(principal * rate * time) / 100;
+        System.out.println("The Simple Interest using Principal , Rate and Time is: "+simple_interest);
+    }
 }

@@ -1,7 +1,10 @@
-public class areaofcircle {
+import java.util.Scanner;
+
+public class AreaOfCircle {
     public static void main(String[] args) {
-        double radius = 7.0;
-        double area = Math.PI * radius * radius;
-        System.out.println("The area of the circle with radius " + radius + " is: " + area);
+        Scanner sc =new Scanner(System.in);
+        double radius= sc.nextInt();
+        double area=(3.14)*(radius*radius);
+        System.out.println("The Area of the Circle is: "+area);
     }
 }
